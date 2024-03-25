@@ -1,17 +1,29 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
-import Home from "./pages/home"
-import Search from "./pages/search"
-import Cart from "./pages/cart"
+import { lazy, Suspense } from "react"
+import Loader from "./components/Loader"
+import Header from "./components/Header"
+
+const Home =lazy(()=> import ( "./pages/home"))
+const Search =lazy(()=> import ( "./pages/search"))
+const Cart =lazy(()=> import ("./pages/cart")) 
+
+import './App.css';
+
 
 const App = () => {
+ 
   return (
-  <Router>
+    <Router>
+      <Header />
+    <Suspense fallback={<Loader />}>
     <Routes>
       <Route path ="/" element = {<Home />} />
       <Route path ="/search" element = {<Search/>} />
       <Route path ="/cart" element = {<Cart />} />
     </Routes>
+  </Suspense>
   </Router>
+  
   )
 }
 
