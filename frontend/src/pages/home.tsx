@@ -10,23 +10,23 @@ const Home = () => {
   return (
     <div className="w-full h-full p-3">
       <div className="w-full max-w-6xl mx-auto ">
-        <div className="flex flex-col md:flex-row items-center justify-around mt-8 lg:mt-0">
-          <div className="px-4 flex flex-col  max-w-md">
+        <div className="flex flex-col md:flex-row items-center justify-between">
+          <div className="flex flex-col  max-w-xl">
             {" "}
-            <h1 className="text-2xl md:text-5xl font-bold  my-3">
+            <h1 className="text-2xl md:text-5xl font-bold ">
               Get All The Latest Gadgets Tailored For Your Special Needs
             </h1>
-            <p className="text-sm md:text-xl text-gray-500 ">
+            <p className="text-sm md:text-xl text-gray-500 mt-4">
               Explore a wide range of cutting-edge gadgets including
               smartphones, earphones, laptops, and more. We carefully select our
               products to meet your specific requirements and offer the latest
               technology at competitive prices.
             </p>
           </div>
-          <Lottie animationData={GadjetAnimation} className="max-w-lg" />
+          <Lottie animationData={GadjetAnimation} className="max-w-md" />
         </div>
 
-        <div className="w-full mt-8">
+        <div className="w-full mt-3">
           <img
             src={gadjets_img}
             alt="laptop"
