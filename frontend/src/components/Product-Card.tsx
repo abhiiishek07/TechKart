@@ -18,7 +18,7 @@ const ProductCard = ({
   handler,
 }: ProductProps) => {
   return (
-    <div className="card card-compact w-[23rem] bg-base-100 shadow-xl ">
+    <div className="card card-compact w-[20rem] md:w-[23rem] bg-base-100 shadow-xl border">
       <figure>
         <img src={photo} alt={name} />
       </figure>
