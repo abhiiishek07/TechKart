@@ -14,12 +14,8 @@ const Header = () => {
   );
 
   useEffect(() => {
-    console.log("hello");
-
     localStorage.setItem("isDark", JSON.stringify(isDark));
   }, [isDark]);
-
-  console.log("value from ls", localStorage.getItem("isDark"));
 
   const handleLogout = () => {};
 
