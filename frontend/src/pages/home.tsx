@@ -1,17 +1,36 @@
 import { FaBox } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import ProductCard from "../components/Product-Card";
+import gadjets_img from "../assets/images/gadjets.png";
+import Lottie from "lottie-react";
+import GadjetAnimation from "../assets/lottie/gadjets_animation.json";
 
 const Home = () => {
   const handleAddToCart = () => {};
   return (
     <div className="w-full h-full p-3">
-      <div className="w-full max-w-6xl mx-auto mt-20">
-        <div className="w-full">
+      <div className="w-full max-w-6xl mx-auto ">
+        <div className="flex flex-col md:flex-row items-center justify-around mt-8 lg:mt-0">
+          <div className="px-4 flex flex-col  max-w-md">
+            {" "}
+            <h1 className="text-2xl md:text-5xl font-bold  my-3">
+              Get All The Latest Gadgets Tailored For Your Special Needs
+            </h1>
+            <p className="text-sm md:text-xl text-gray-500 ">
+              Explore a wide range of cutting-edge gadgets including
+              smartphones, earphones, laptops, and more. We carefully select our
+              products to meet your specific requirements and offer the latest
+              technology at competitive prices.
+            </p>
+          </div>
+          <Lottie animationData={GadjetAnimation} className="max-w-lg" />
+        </div>
+
+        <div className="w-full mt-8">
           <img
-            src="https://img.freepik.com/premium-photo/laptop-computer-black-color-place-table-with-dark-background-3d-illustration-rendering-image_37129-1714.jpg"
+            src={gadjets_img}
             alt="laptop"
-            className="w-full h-96 rounded-md"
+            className="w-full h-44 md:h-[28rem] rounded-md border shadow-sm"
           />
         </div>
         <div className="flex justify-between mt-12">
@@ -24,7 +43,7 @@ const Home = () => {
             More -&gt;
           </Link>
         </div>
-        <div className="my-5 flex justify-between">
+        <div className="my-5 flex flex-col md:flex-row justify-between items-center gap-3">
           <ProductCard
             id="1234ac"
             name="Macbook"
@@ -56,3 +75,5 @@ const Home = () => {
 };
 
 export default Home;
+
+//
