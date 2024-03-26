@@ -10,9 +10,9 @@ const Header = () => {
   const handleLogout = () => {};
 
   return (
-    <div className="navbar bg-base-100 border-b">
+    <div className="navbar bg-base-100 border-b fixed">
       <div className="flex-1">
-        <Link to="/" className="btn btn-ghost text-xl">
+        <Link to="/" className="btn btn-ghost text-3xl font-bold">
           TechKart
         </Link>
       </div>
