@@ -1,10 +1,10 @@
 import { useEffect, useState } from "react";
-import { FaRegUser, FaRegUserCircle } from "react-icons/fa";
+import { FaRegUser } from "react-icons/fa";
 import { MdOutlineShoppingCart } from "react-icons/md";
 import { Link } from "react-router-dom";
 
 const user = {
-  _id: "abcc",
+  _id: "abc",
   role: "admin",
 };
 
@@ -20,7 +20,7 @@ const Header = () => {
   const handleLogout = () => {};
 
   return (
-    <div className="navbar bg-base-100 sticky top-0 z-20">
+    <div className="navbar w-full bg-base-100 sticky top-0 z-20">
       <div className="flex-1">
         <Link to="/" className="btn btn-ghost text-3xl font-bold">
           TechKart
