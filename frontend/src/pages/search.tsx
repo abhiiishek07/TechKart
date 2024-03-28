@@ -14,9 +14,9 @@ const Search = () => {
 
   return (
     <div className="w-full h-full">
-      <div className="max-w-7xl h-full flex flex-col md:flex-row mx-auto my-6 gap-4">
+      <div className="max-w-7xl h-full flex flex-col md:flex-row mx-auto my-10 gap-4">
         {/* filters */}
-        <div className="w-full max-w-xs mx-auto h-full border shadow-sm flex flex-col p-4 rounded-md md:sticky md:top-16 ">
+        <div className="w-full max-w-xs mx-auto h-full border shadow-md flex flex-col p-4 rounded-md md:sticky md:top-28 ">
           <h3 className="font-bold text-xl">FILTERS</h3>
           <label className="form-control w-full max-w-md">
             <div className="label">
