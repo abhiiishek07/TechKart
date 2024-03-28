@@ -9,7 +9,7 @@ const Home = () => {
   const handleAddToCart = () => {};
   return (
     <div className="w-full h-full p-3">
-      <div className="w-full max-w-6xl mx-auto ">
+      <div className="w-full max-w-6xl mx-auto mt-12 lg:mt-0">
         <div className="flex flex-col md:flex-row items-center justify-between">
           <div className="flex flex-col  max-w-xl">
             {" "}

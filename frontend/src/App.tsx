@@ -8,6 +8,7 @@ const Search = lazy(() => import("./pages/search"));
 const Cart = lazy(() => import("./pages/cart"));
 const Shipping = lazy(() => import("./pages/shipping"));
 const Login = lazy(() => import("./pages/login"));
+const Orders = lazy(() => import("./pages/orders"));
 
 import "./App.css";
 
@@ -27,6 +28,7 @@ const App = () => {
           {/* logged in path */}
           <Route>
             <Route path="/shipping" element={<Shipping />} />
+            <Route path="/orders" element={<Orders />} />
           </Route>
         </Routes>
       </Suspense>
